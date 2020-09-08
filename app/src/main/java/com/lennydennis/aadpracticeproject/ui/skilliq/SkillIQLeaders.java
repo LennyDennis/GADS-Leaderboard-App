@@ -1,4 +1,4 @@
-package com.lennydennis.aadpracticeproject.ui.main.SkillIQ;
+package com.lennydennis.aadpracticeproject.ui.skilliq;
 
 import androidx.lifecycle.ViewModelProviders;
 

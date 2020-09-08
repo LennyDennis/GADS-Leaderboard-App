@@ -1,4 +1,4 @@
-package com.lennydennis.aadpracticeproject.ui.main;
+package com.lennydennis.aadpracticeproject.ui;
 
 import android.content.Context;
 
@@ -9,8 +9,8 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 
 import com.lennydennis.aadpracticeproject.R;
-import com.lennydennis.aadpracticeproject.ui.main.Learning.LearningLeaders;
-import com.lennydennis.aadpracticeproject.ui.main.SkillIQ.SkillIQLeaders;
+import com.lennydennis.aadpracticeproject.ui.learning.LearningLeaders;
+import com.lennydennis.aadpracticeproject.ui.skilliq.SkillIQLeaders;
 
 /**
  * A [FragmentPagerAdapter] that returns a fragment corresponding to

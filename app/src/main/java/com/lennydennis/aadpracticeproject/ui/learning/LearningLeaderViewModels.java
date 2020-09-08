@@ -1,4 +1,4 @@
-package com.lennydennis.aadpracticeproject.ui.main.Learning;
+package com.lennydennis.aadpracticeproject.ui.learning;
 
 import androidx.lifecycle.ViewModel;
 
