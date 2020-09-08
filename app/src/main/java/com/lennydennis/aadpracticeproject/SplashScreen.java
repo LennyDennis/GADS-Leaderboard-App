@@ -11,7 +11,7 @@ import android.view.animation.AnimationUtils;
 
 import com.lennydennis.aadpracticeproject.databinding.ActivitySpashScreenBinding;
 
-public class SpashScreen extends AppCompatActivity {
+public class SplashScreen extends AppCompatActivity {
 
     private static final int SPLASH_DURATION = 3000;
 
@@ -28,7 +28,7 @@ public class SpashScreen extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent intent = new Intent(SpashScreen.this,MainActivity.class);
+                Intent intent = new Intent(SplashScreen.this,MainActivity.class);
                 startActivity(intent);
             }
         }, SPLASH_DURATION);
