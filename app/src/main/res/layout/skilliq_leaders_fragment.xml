@@ -5,9 +5,9 @@
     android:layout_height="match_parent"
     tools:context=".ui.skilliq.SkillIQLeaders">
 
-    <TextView
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/skill_iq_recyclerview"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="Skill IQ" />
-
+        tools:listitem="@layout/skill_iq_item" />
 </FrameLayout>

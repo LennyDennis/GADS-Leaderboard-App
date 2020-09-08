@@ -11,4 +11,5 @@
     <string name="total_hours">200</string>
     <string name="learning_hours">" learning hours, "</string>
     <string name="learner_country">Kenya</string>
+    <string name="skill_iq_score">" Skill IQ Score, "</string>
 </resources>

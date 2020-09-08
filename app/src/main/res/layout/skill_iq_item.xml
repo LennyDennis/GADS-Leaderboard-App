@@ -13,7 +13,7 @@
         android:layout_height="match_parent">
 
         <ImageView
-            android:id="@+id/learning_badge"
+            android:id="@+id/skill_iq_badge"
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:layout_marginStart="15dp"
@@ -32,7 +32,7 @@
             android:text="@string/learner_name"
             android:textSize="18sp"
             android:textStyle="bold"
-            app:layout_constraintStart_toEndOf="@+id/learning_badge"
+            app:layout_constraintStart_toEndOf="@+id/skill_iq_badge"
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
@@ -42,7 +42,7 @@
             android:layout_marginStart="40dp"
             android:layout_marginTop="8dp"
             android:text="@string/total_hours"
-            app:layout_constraintStart_toEndOf="@+id/learning_badge"
+            app:layout_constraintStart_toEndOf="@+id/skill_iq_badge"
             app:layout_constraintTop_toBottomOf="@+id/tv_learner_name" />
 
         <TextView
@@ -50,12 +50,12 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:text="@string/learning_hours"
+            android:text="@string/skill_iq_score"
             app:layout_constraintStart_toEndOf="@+id/tv_total_hours"
             app:layout_constraintTop_toBottomOf="@+id/tv_learner_name" />
 
         <TextView
-            android:id="@+id/tv_learner_country"
+            android:id="@+id/skill_iq_learner_country"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
