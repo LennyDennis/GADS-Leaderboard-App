@@ -8,7 +8,7 @@
 
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/splash_background"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:scaleType="fitXY"
@@ -16,17 +16,19 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/launch2" />
+        app:srcCompat="@drawable/launch2"
+        android:contentDescription="@string/background" />
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/gads_logo"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:padding="30dp"
         android:scaleType="centerInside"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView"
-        app:layout_constraintEnd_toEndOf="@+id/imageView"
-        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintBottom_toBottomOf="@+id/splash_background"
+        app:layout_constraintEnd_toEndOf="@+id/splash_background"
+        app:layout_constraintStart_toStartOf="@+id/splash_background"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/gads" />
+        app:srcCompat="@drawable/gads"
+        android:contentDescription="@string/logo" />
 </androidx.constraintlayout.widget.ConstraintLayout>
