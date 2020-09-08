@@ -9,6 +9,8 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 
 import com.lennydennis.aadpracticeproject.R;
+import com.lennydennis.aadpracticeproject.ui.main.Learning.LearningLeaders;
+import com.lennydennis.aadpracticeproject.ui.main.SkillIQ.SkillIQLeaders;
 
 /**
  * A [FragmentPagerAdapter] that returns a fragment corresponding to
@@ -27,9 +29,18 @@ public class SectionsPagerAdapter extends FragmentPagerAdapter {
 
     @Override
     public Fragment getItem(int position) {
-        // getItem is called to instantiate the fragment for the given page.
-        // Return a PlaceholderFragment (defined as a static inner class below).
-        return PlaceholderFragment.newInstance(position + 1);
+        Fragment fragment = null;
+        switch (position){
+            case 0:
+                fragment = new LearningLeaders();
+                break;
+            case 1:
+                fragment = new SkillIQLeaders();
+                break;
+            default:
+                return null;
+        }
+        return fragment;
     }
 
     @Nullable
