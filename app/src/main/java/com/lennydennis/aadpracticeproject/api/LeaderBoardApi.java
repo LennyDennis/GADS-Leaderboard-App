@@ -8,12 +8,12 @@ import java.util.List;
 import retrofit2.Call;
 import retrofit2.http.GET;
 
-public interface LeaderboardApi {
+public interface LeaderBoardApi {
 
     @GET("/api/hours")
     Call<List<LearningHours>> getLearningHours();
 
     @GET("/api/skilliq")
-    Call<List<SkillIQScores>> getSkillIQscores();
+    Call<List<SkillIQScores>> getSkillIQScores();
 
 }
