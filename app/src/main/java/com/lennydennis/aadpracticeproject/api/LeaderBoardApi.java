@@ -11,9 +11,9 @@ import retrofit2.http.GET;
 public interface LeaderBoardApi {
 
     @GET("/api/hours")
-    Call<List<LearningHoursLeaders>> getLearningHours();
+    Call<List<LearningHoursLeaders>> getLearningHoursLeaders();
 
     @GET("/api/skilliq")
-    Call<List<SkillIQScoresLeaders>> getSkillIQScores();
+    Call<List<SkillIQScoresLeaders>> getSkillIQScoresLeaders();
 
 }

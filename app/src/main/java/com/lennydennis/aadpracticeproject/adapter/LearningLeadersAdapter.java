@@ -41,7 +41,7 @@ public class LearningLeadersAdapter extends RecyclerView.Adapter<LearningLeaders
 
     @Override
     public int getItemCount() {
-        return 5;
+        return mLearningHoursLeaders.size();
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder{
