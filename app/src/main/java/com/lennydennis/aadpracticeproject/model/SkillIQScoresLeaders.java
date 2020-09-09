@@ -1,5 +1,11 @@
 package com.lennydennis.aadpracticeproject.model;
 
+import android.content.Context;
+import android.widget.ImageView;
+
+import androidx.databinding.BindingAdapter;
+
+import com.bumptech.glide.Glide;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
@@ -17,6 +23,13 @@ public class SkillIQScoresLeaders {
     @SerializedName("badgeUrl")
     @Expose
     private String badgeUrl;
+
+    public SkillIQScoresLeaders(String name, int score, String country, String badgeUrl) {
+        this.name = name;
+        this.score = score;
+        this.country = country;
+        this.badgeUrl = badgeUrl;
+    }
 
     public String getName() {
         return name;
@@ -48,6 +61,14 @@ public class SkillIQScoresLeaders {
 
     public void setBadgeUrl(String badgeUrl) {
         this.badgeUrl = badgeUrl;
+    }
+
+    @BindingAdapter("android:skillIQBadge")
+    public static void loadSkillIQBadge(ImageView skillIQBadge, String badgeUrl){
+        Glide.with(skillIQBadge.getContext())
+                .asBitmap()
+                .load(badgeUrl)
+                .into(skillIQBadge);
     }
 
 }
