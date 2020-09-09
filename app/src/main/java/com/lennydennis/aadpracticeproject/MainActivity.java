@@ -11,7 +11,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.view.Window;
 import android.view.WindowManager;
 
-import com.lennydennis.aadpracticeproject.ui.SectionsPagerAdapter;
+import com.lennydennis.aadpracticeproject.adapter.SectionsPagerAdapter;
 
 public class MainActivity extends AppCompatActivity {
 

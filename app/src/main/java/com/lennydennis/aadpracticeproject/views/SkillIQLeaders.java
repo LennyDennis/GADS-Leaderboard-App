@@ -1,4 +1,4 @@
-package com.lennydennis.aadpracticeproject.ui.skilliq;
+package com.lennydennis.aadpracticeproject.views;
 
 import androidx.lifecycle.ViewModelProviders;
 
@@ -13,6 +13,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.lennydennis.aadpracticeproject.R;
+import com.lennydennis.aadpracticeproject.viewmodels.SkillIQLeadersViewModel;
 
 public class SkillIQLeaders extends Fragment {
 
