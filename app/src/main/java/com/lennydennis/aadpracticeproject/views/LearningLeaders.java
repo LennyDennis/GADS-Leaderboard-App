@@ -21,12 +21,14 @@ import com.lennydennis.aadpracticeproject.model.LearningHoursLeaders;
 import com.lennydennis.aadpracticeproject.viewmodels.LearningLeaderViewModels;
 
 import java.util.ArrayList;
+import java.util.Objects;
 
 public class LearningLeaders extends Fragment {
 
     private LearningLeaderViewModels mViewModel;
     private LearningLeadersFragmentBinding mLearningLeadersFragmentBinding;
     private ArrayList<LearningHoursLeaders> mLearningHoursLeaders = new ArrayList<>();
+    private LearningLeadersAdapter mLearningLeadersAdapter;
 
 
     public static LearningLeaders newInstance() {
@@ -45,7 +47,8 @@ public class LearningLeaders extends Fragment {
 
     private void initializeFragment() {
         mLearningLeadersFragmentBinding.learningRecyclerview.setLayoutManager(new LinearLayoutManager(getContext()));
-        mLearningLeadersFragmentBinding.learningRecyclerview.setAdapter(new LearningLeadersAdapter(getContext(),mLearningHoursLeaders));
+        mLearningLeadersAdapter = new LearningLeadersAdapter(getContext(),mLearningHoursLeaders);
+        mLearningLeadersFragmentBinding.learningRecyclerview.setAdapter(mLearningLeadersAdapter);
 
     }
 
@@ -53,7 +56,13 @@ public class LearningLeaders extends Fragment {
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
         mViewModel = ViewModelProviders.of(this).get(LearningLeaderViewModels.class);
-        // TODO: Use the ViewModel
+
+        mViewModel.getLearningHoursLeaders().observe(Objects.requireNonNull(getActivity()), learningLeaders ->{
+            if(learningLeaders != null){
+                mLearningHoursLeaders.addAll(learningLeaders);
+                mLearningLeadersAdapter.notifyDataSetChanged();
+            }
+        });
     }
 
 }
