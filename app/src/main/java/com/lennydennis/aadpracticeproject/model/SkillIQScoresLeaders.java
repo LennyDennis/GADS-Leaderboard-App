@@ -3,14 +3,14 @@ package com.lennydennis.aadpracticeproject.model;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
-public class LearningHours {
+public class SkillIQScoresLeaders {
 
     @SerializedName("name")
     @Expose
     private String name;
-    @SerializedName("hours")
+    @SerializedName("score")
     @Expose
-    private int hours;
+    private int score;
     @SerializedName("country")
     @Expose
     private String country;
@@ -26,12 +26,12 @@ public class LearningHours {
         this.name = name;
     }
 
-    public int getHours() {
-        return hours;
+    public int getScore() {
+        return score;
     }
 
-    public void setHours(int hours) {
-        this.hours = hours;
+    public void setScore(int score) {
+        this.score = score;
     }
 
     public String getCountry() {
