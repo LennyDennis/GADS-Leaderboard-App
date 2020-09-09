@@ -49,7 +49,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="40dp"
                 android:layout_marginTop="8dp"
-                android:text="@{learningLeaders.hours}"
+                android:text="@{String.valueOf(learningLeaders.hours)}"
                 app:layout_constraintStart_toEndOf="@+id/learning_badge"
                 app:layout_constraintTop_toBottomOf="@+id/tv_learner_name" />
 
