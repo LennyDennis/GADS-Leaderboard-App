@@ -1,4 +1,4 @@
-package com.lennydennis.aadpracticeproject.api;
+package com.lennydennis.aadpracticeproject.api.LeaderBoardApi;
 
 import com.lennydennis.aadpracticeproject.model.LearningHoursLeaders;
 import com.lennydennis.aadpracticeproject.model.SkillIQScoresLeaders;

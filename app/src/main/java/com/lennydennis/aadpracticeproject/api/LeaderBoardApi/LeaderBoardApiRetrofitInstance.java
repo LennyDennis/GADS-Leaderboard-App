@@ -1,4 +1,4 @@
-package com.lennydennis.aadpracticeproject.api;
+package com.lennydennis.aadpracticeproject.api.LeaderBoardApi;
 
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
