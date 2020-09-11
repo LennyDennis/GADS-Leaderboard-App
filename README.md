@@ -12,13 +12,11 @@ DataBinding
 
 # Application Screenshots
 
-<image src="./screenshots/image1.png" height="500px" /> <image src="./screenshots/image2.png" height="500px" />
+<image src="./screenshots/image1.png" height="400px" /> <image src="./screenshots/image2.png" height="400px" /> <image src="./screenshots/image3.png" height="400px" /> 
 
-<image src="./screenshots/image3.png" height="500px" /> <image src="./screenshots/image4.png" height="500px" />
+<image src="./screenshots/image4.png" height="400px" /> <image src="./screenshots/image5.png" height="400px" /> <image src="./screenshots/image6.png" height="400px" />
 
-<image src="./screenshots/image5.png" height="500px" /> <image src="./screenshots/image6.png" height="500px" />
-
-<image src="./screenshots/image7.png" height="500px" />
+<image src="./screenshots/image7.png" height="400px" />
 
 
 # License
