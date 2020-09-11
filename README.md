@@ -12,13 +12,13 @@ DataBinding
 
 # Application Screenshots
 
-![Image](./screenshots/image1.png)
-![Image](./screenshots/image2.png)
-![Image](./screenshots/image3.png)
-![Image](./screenshots/image4.png)
-![Image](./screenshots/image5.png)
-![Image](./screenshots/image6.png)
-![Image](./screenshots/image7.png)
+![alt text](./screenshots/image1.png)
+![alt text](./screenshots/image2.png)
+![alt text](./screenshots/image3.png)
+![alt text](./screenshots/image4.png)
+![alt text](./screenshots/image5.png)
+![alt text](./screenshots/image6.png)
+![alt text](./screenshots/image7.png)
 
 # License
 *MIT License
