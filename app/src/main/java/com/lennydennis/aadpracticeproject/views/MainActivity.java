@@ -30,10 +30,9 @@ public class MainActivity extends AppCompatActivity {
         setContentView(activityMainBinding.getRoot());
 
         if (savedInstanceState == null) {
-//            HomeFragment homeFragment = new HomeFragment();
-            SubmissionFragment submissionFragment = new SubmissionFragment();
+            HomeFragment homeFragment = new HomeFragment();
             FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
-            fragmentTransaction.add(R.id.host_fragment, submissionFragment);
+            fragmentTransaction.add(R.id.host_fragment, homeFragment);
             fragmentTransaction.commit();
 
         }

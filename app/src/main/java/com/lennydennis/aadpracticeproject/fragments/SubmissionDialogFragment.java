@@ -17,11 +17,6 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.lennydennis.aadpracticeproject.R;
-import com.lennydennis.aadpracticeproject.databinding.SubmissionDialogFragmentBinding;
-import com.lennydennis.aadpracticeproject.databinding.SubmissionFragmentBinding;
-import com.lennydennis.aadpracticeproject.model.Submission;
-
-import java.util.Objects;
 
 public class SubmissionDialogFragment extends DialogFragment {
 

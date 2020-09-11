@@ -2,6 +2,7 @@ package com.lennydennis.aadpracticeproject.views;
 
 import androidx.databinding.DataBindingUtil;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -18,7 +19,6 @@ import com.lennydennis.aadpracticeproject.databinding.HomeFragmentBinding;
 
 public class HomeFragment extends Fragment {
 
-    private HomeViewModel mViewModel;
     private HomeFragmentBinding mHomeFragmentBinding;
 
     public static HomeFragment newInstance() {
@@ -34,15 +34,15 @@ public class HomeFragment extends Fragment {
         mHomeFragmentBinding.viewPager.setAdapter(sectionsPagerAdapter);
         mHomeFragmentBinding.tabs.setupWithViewPager(mHomeFragmentBinding.viewPager);
 
+        mHomeFragmentBinding.button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), SubmitActivity.class);
+                startActivity(intent);
+            }
+        });
+
         return mHomeFragmentBinding.getRoot();
-    }
-
-    @Override
-    public void onActivityCreated(@Nullable Bundle savedInstanceState) {
-        super.onActivityCreated(savedInstanceState);
-        mViewModel = new HomeViewModel(getContext());
-
-        // TODO: Use the ViewModel
     }
 
 }
