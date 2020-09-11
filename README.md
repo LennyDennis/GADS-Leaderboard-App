@@ -12,13 +12,14 @@ DataBinding
 
 # Application Screenshots
 
-![Image 1](./screenshots/image1.png = 100x20)
-![Image 2](./screenshots/image2.png = 100x20)
-![Image 3](./screenshots/image3.png = 100x20)
-![Image 4](./screenshots/image4.png = 100x20)
-![Image 5](./screenshots/image5.png = 100x20)
-![Image 6](./screenshots/image6.png = 100x20)
-![Image 7](./screenshots/image7.png = 100x20)
+<image src="./screenshots/image1.png" height="600px" />
+<image src="./screenshots/image2.png" height="600px" />
+<image src="./screenshots/image3.png" height="600px" />
+<image src="./screenshots/image4.png" height="600px" />
+<image src="./screenshots/image5.png" height="600px" />
+<image src="./screenshots/image6.png" height="600px" />
+<image src="./screenshots/image7.png" height="600px" />
+
 
 # License
 *MIT License
