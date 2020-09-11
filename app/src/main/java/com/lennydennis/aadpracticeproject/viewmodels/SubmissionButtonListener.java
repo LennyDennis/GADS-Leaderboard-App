@@ -1,10 +1,8 @@
 package com.lennydennis.aadpracticeproject.viewmodels;
 
-public interface SubmissionButtonListener {
+public interface SubmissionButtonListener<T> {
 
-    void onStarted();
+    void onResponse(T response);
 
-    void onSuccess();
-
-    void onFailure();
+    void onFailure(Throwable error);
 }

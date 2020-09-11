@@ -1,25 +1,20 @@
 package com.lennydennis.aadpracticeproject.views;
 
 import androidx.databinding.DataBindingUtil;
-import androidx.fragment.app.FragmentActivity;
-import androidx.lifecycle.ViewModelProviders;
 
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
-import androidx.viewpager.widget.ViewPager;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.google.android.material.tabs.TabLayout;
 import com.lennydennis.aadpracticeproject.R;
 import com.lennydennis.aadpracticeproject.adapter.SectionsPagerAdapter;
 import com.lennydennis.aadpracticeproject.databinding.HomeFragmentBinding;
-import com.lennydennis.aadpracticeproject.viewmodels.HomeViewModel;
 
 public class HomeFragment extends Fragment {
 
