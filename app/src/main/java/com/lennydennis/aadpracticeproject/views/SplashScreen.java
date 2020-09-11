@@ -1,4 +1,4 @@
-package com.lennydennis.aadpracticeproject;
+package com.lennydennis.aadpracticeproject.views;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -9,6 +9,7 @@ import android.view.WindowManager;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 
+import com.lennydennis.aadpracticeproject.R;
 import com.lennydennis.aadpracticeproject.databinding.ActivitySpashScreenBinding;
 
 public class SplashScreen extends AppCompatActivity {
@@ -28,7 +29,7 @@ public class SplashScreen extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent intent = new Intent(SplashScreen.this,MainActivity.class);
+                Intent intent = new Intent(SplashScreen.this, MainActivity.class);
                 startActivity(intent);
             }
         }, SPLASH_DURATION);

@@ -12,7 +12,7 @@ import com.lennydennis.aadpracticeproject.repository.LeaderBoardRepository;
 
 import java.util.List;
 
-public class LearningLeaderViewModels extends AndroidViewModel {
+public class   LearningLeaderViewModels extends AndroidViewModel {
     private LeaderBoardRepository mLeaderBoardRepository;
     private LiveData<List<LearningHoursLeaders>> mLearningHoursLeaders;
 

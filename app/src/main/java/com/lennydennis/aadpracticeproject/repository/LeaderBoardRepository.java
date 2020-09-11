@@ -3,8 +3,8 @@ package com.lennydennis.aadpracticeproject.repository;
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 
-import com.lennydennis.aadpracticeproject.api.LeaderBoardApi;
-import com.lennydennis.aadpracticeproject.api.LeaderBoardApiRetrofitInstance;
+import com.lennydennis.aadpracticeproject.api.LeaderBoardApi.LeaderBoardApi;
+import com.lennydennis.aadpracticeproject.api.LeaderBoardApi.LeaderBoardApiRetrofitInstance;
 import com.lennydennis.aadpracticeproject.model.LearningHoursLeaders;
 import com.lennydennis.aadpracticeproject.model.SkillIQScoresLeaders;
 

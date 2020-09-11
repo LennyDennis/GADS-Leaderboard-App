@@ -57,7 +57,7 @@ public class LearningLeaders extends Fragment {
         super.onActivityCreated(savedInstanceState);
         mViewModel = ViewModelProviders.of(this).get(LearningLeaderViewModels.class);
 
-        mViewModel.getLearningHoursLeaders().observe(Objects.requireNonNull(getActivity()), learningLeaders ->{
+        mViewModel.getLearningHoursLeaders().observe(requireActivity(), learningLeaders ->{
             if(learningLeaders != null){
                 mLearningHoursLeaders.addAll(learningLeaders);
                 mLearningLeadersAdapter.notifyDataSetChanged();

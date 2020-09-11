@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="submission"
+            type="com.lennydennis.aadpracticeproject.model.Submission" />
+
+        <variable
+            name="submissionViewModel"
+            type="com.lennydennis.aadpracticeproject.viewmodels.SubmissionViewModel" />
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/launch2"
+        android:fitsSystemWindows="true"
+        tools:context=".views.SubmissionFragment">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="@style/AppTheme.AppBarOverlay"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/submission_back_button"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="16dp"
+                    android:src="@drawable/abc_vector_test"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/gads_logo"
+                    android:layout_width="260dp"
+                    android:layout_height="80dp"
+                    android:layout_marginStart="30dp"
+                    android:src="@drawable/gads_header"
+                    app:layout_constraintStart_toEndOf="@+id/submission_back_button"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/submission"
+                    android:textColor="#F7AA37"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+                <View
+                    android:id="@+id/view2"
+                    android:layout_width="0dp"
+                    android:layout_height="2dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="@drawable/gradient_line"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/first_name"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="60dp"
+                    android:background="@drawable/round_background"
+                    android:textColorHint="#000"
+                    app:hintAnimationEnabled="false"
+                    app:hintTextColor="#000"
+                    app:layout_constraintEnd_toStartOf="@+id/last_name"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/view2">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:cursorVisible="true"
+                        android:hint="@string/first_name"
+                        android:inputType="text"
+                        android:selectAllOnFocus="true"
+                        android:singleLine="false"
+                        android:text="@={submission.firstName}"
+                        android:textColorHighlight="#000"
+                        android:textColorHint="#000"
+                        android:textColorLink="#000"
+                        android:textStyle="bold"
+                        app:boxBackgroundColor="#FFF"
+                        app:boxStrokeColor="#FFF"
+                        app:boxStrokeWidth="0dp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/last_name"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="60dp"
+                    android:background="@drawable/round_background"
+                    android:textColorHint="#000"
+                    app:hintAnimationEnabled="false"
+                    app:hintTextColor="#000"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/first_name"
+                    app:layout_constraintTop_toBottomOf="@+id/view2">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:cursorVisible="true"
+                        android:hint="@string/last_name"
+                        android:inputType="text"
+                        android:selectAllOnFocus="true"
+                        android:singleLine="false"
+                        android:text="@={submission.lastName}"
+                        android:textColorHighlight="#000"
+                        android:textColorHint="#000"
+                        android:textColorLink="#000"
+                        android:textStyle="bold" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/email_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="@drawable/round_background"
+                    android:textColorHint="#000"
+                    app:hintAnimationEnabled="false"
+                    app:hintTextColor="#000"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/last_name">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:cursorVisible="true"
+                        android:hint="@string/email_address"
+                        android:inputType="textEmailAddress"
+                        android:selectAllOnFocus="true"
+                        android:singleLine="false"
+                        android:text="@={submission.emailAddress}"
+                        android:textColorHighlight="#000"
+                        android:textColorHint="#000"
+                        android:textColorLink="#000"
+                        android:textStyle="bold" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textInputLayout6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="@drawable/round_background"
+                    android:textColorHint="#000"
+                    app:hintAnimationEnabled="false"
+                    app:hintTextColor="#000"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/email_address">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:cursorVisible="true"
+                        android:hint="@string/github_link"
+                        android:inputType="textUri"
+                        android:selectAllOnFocus="true"
+                        android:singleLine="false"
+                        android:text="@{submission.githubLink}"
+                        android:textColorHighlight="#000"
+                        android:textColorHint="#000"
+                        android:textColorLink="#000"
+                        android:textStyle="bold" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <Button
+                    android:id="@+id/submit_button"
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:background="@drawable/submit_button"
+                    android:onClick="@{submissionViewModel.submitProjectButtonClick}"
+                    android:text="@string/submit"
+                    android:textColor="#000"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textInputLayout6" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
